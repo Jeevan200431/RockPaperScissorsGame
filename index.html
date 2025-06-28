@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="game-mode">
+    <label for="rounds">Play Best Of:</label>
+    <select id="rounds">
+      <option value="5">5</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <div class="round-counter">
+    <p id="round-display">Round: 1</p>
+  </div>
+
+
+  <div class="choices">
+    <div class="choice" id="paper">
+      <img src="./images/paper.png" alt="paper" />
+    </div>
+    <div class="choice" id="rock">
+      <img src="./images/rock.png" alt="rock" />
+    </div>
+    <div class="choice" id="scissors">
+      <img src="./images/scissors.png" alt="scissors" />
+    </div>
+  </div>
+
+  <div class="scoreboard">
+    <div class="score">
+      <p id="userscore">0</p>
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="compscore">0</p>
+      <p>Computer</p>
+    </div>
+  </div>
+
+  <div class="resultcontainer">
+    <p id="msg" class="result-default">Play Your Move</p>
+  </div>
+
+  <div class="final-result" id="final-result" style="display: none;">
+    <h2 id="winner-msg"></h2>
+    <button onclick="resetGame()">Play Again</button>
+  </div>
+
+  <script src="app.js"></script>
+
+  <footer>
+    Thank you for Playing.
+  </footer>
+</body>
+</html>

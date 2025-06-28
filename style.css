@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: rgb(7, 32, 57);
+  height: 70px;
+  line-height: 5rem;
+  color: rgb(242, 244, 245);
+}
+
+.game-mode {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.game-mode select {
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #302b63;
+  color: white;
+  cursor: pointer;
+}
+
+.round-counter {
+  margin-top: 15px;
+  color: #f8f9fa;
+  font-size: 1.2rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.choice {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.choice:hover {
+  background-color: #818cf1;
+  cursor: pointer;
+}
+
+.scoreboard {
+  background: rgba(232, 167, 167, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #e4dfdf;
+  display: flex;
+  font-size: 2rem;
+  margin: 30px auto;
+  width: fit-content;
+  text-align: center;
+  gap: 5rem;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+#userscore,
+#compscore {
+  font-size: 4rem;
+}
+
+.resultcontainer {
+  margin-top: 5rem;
+}
+
+/* Result Styles */
+#msg {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.result-default {
+  background-color: rgb(35, 8, 84);
+  color: white;
+}
+
+.result-win {
+  background-color: #16a34a; 
+  color: white;
+}
+
+.result-lose {
+  background-color: #dc2626; 
+  color: white;
+}
+
+.final-result {
+  margin-top: 2rem;
+  color: white;
+}
+
+.final-result h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.final-result button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #818cf1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.final-result button:hover {
+  background-color: #4f46e5;
+}
+
+footer {
+  background-color: #081b31;
+  margin-top: 60px;
+  height: 32px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 32px;
+}

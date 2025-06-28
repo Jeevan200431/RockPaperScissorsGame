@@ -14,11 +14,12 @@ Play against the computer in a best-of-5 or best-of-10 challenge with real-time 
 ## Folder Structure:
 
 ROCKPAPER/
+
 │
--├── index.html
--├── style.css
--├── app.js
--└── images/
+├── index.html
+├── style.css
+├── app.js
+└── images/
 
 
 ## Rules:
